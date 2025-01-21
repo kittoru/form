@@ -1,0 +1,26 @@
+
+.submit {
+  margin-top: 0.625rem;
+  padding: 0.625rem 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(303deg, #fe904b 0%, #fb724c 100%);
+  &.disabled {
+    cursor: default;
+    color: #ccd1d2;
+    border: solid 0.14875rem #ccd1d2;
+    background: #f6f6f6;
+  }
+  @media (max-width: 37.5rem) {
+    padding: 1rem 0;
+  }
+}
+.forgot {
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #207198;
+}
