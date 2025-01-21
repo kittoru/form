@@ -8,7 +8,7 @@ import styles from './SignUp.module.scss';
 export const SignUp = () => {
   const { register, handleSubmit, watch, formState: { errors, isValid }, reset } = useForm<Inputs>({ mode: 'onBlur' });
   const onSubmit: SubmitHandler<Inputs> = data => {
-    alert(data);
+    alert(JSON.stringify(data));
     reset();
   }
 
