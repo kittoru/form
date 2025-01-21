@@ -13,7 +13,7 @@ export const LogIn = () => {
 
   return ( 
     <section className={styles.login}>
-      <Top title='Login' text='Don`t have an account?' link='Create Now' />
+      <Top title='Login' link='Create Now'>Don`t have an account?</Top>
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
         <Email label='Email' register={register} watch={watch} errors={errors}/>
         <Password label='Password' minlength={8} register={register} watch={watch} errors={errors}/>
