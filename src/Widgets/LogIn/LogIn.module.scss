@@ -1,18 +1,21 @@
 
 .login {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 35rem;
-  .form {
+  .content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    .forgot {
-      font-size: 1rem;
-      line-height: 150%;
-      letter-spacing: 0.03em;
-      color: #207198;
+    max-width: 35rem;
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .forgot {
+        font-size: 1rem;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: #207198;
+      }
     }
   }
 }

@@ -19,16 +19,18 @@ export const SignUp = () => {
       animate={{ opacity: 1, y: 0 }} 
       exit={{ opacity: 0, y: 100 }}>
         <div className="container">
-          <Top title="Create Your Account" link="Login">Already have an account?</Top>
-          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-            <Input label='First Name' register={register} watch={watch} errors={errors} />
-            <Input label='Last Name' register={register} watch={watch} errors={errors} />
-            <Email label="Email" register={register} watch={watch} errors={errors} />
-            <Password label="Password" minlength={8} register={register} watch={watch} errors={errors} />
-            <Password label="Confirm Password" minlength={8} register={register} watch={watch} errors={errors} confirm={true}/>
-            <Submit isValid={isValid} >Register</Submit>
-          </form>
-          <Bottom />
+          <div className={styles.content}>
+            <Top title="Create Your Account" link="Login">Already have an account?</Top>
+            <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+              <Input label='First Name' register={register} watch={watch} errors={errors} />
+              <Input label='Last Name' register={register} watch={watch} errors={errors} />
+              <Email label="Email" register={register} watch={watch} errors={errors} />
+              <Password label="Password" minlength={8} register={register} watch={watch} errors={errors} />
+              <Password label="Confirm Password" minlength={8} register={register} watch={watch} errors={errors} confirm={true}/>
+              <Submit isValid={isValid} >Register</Submit>
+            </form>
+            <Bottom />
+          </div>
         </div>
     </motion.section>
   );

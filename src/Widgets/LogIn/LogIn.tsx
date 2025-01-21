@@ -19,7 +19,8 @@ export const LogIn = () => {
       animate={{ opacity: 1, y: 0 }} 
       exit={{ opacity: 0, y: 100 }}>
         <div className="container">
-          <Top title='Login' link='Create Now'>Don`t have an account?</Top>
+          <div className={styles.content}>
+            <Top title='Login' link='Create Now'>Don`t have an account?</Top>
           <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
             <Email label='Email' register={register} watch={watch} errors={errors}/>
             <Password label='Password' minlength={8} register={register} watch={watch} errors={errors}/>
@@ -27,7 +28,11 @@ export const LogIn = () => {
             <a className={styles.forgot}>Forgot a password?</a>
           </form>
           <Bottom />
+          </div>
+          
         </div>
+      
     </motion.section>
+    
   );
 }
