@@ -13,7 +13,7 @@ export const SignUp = () => {
 
   return ( 
     <section className={styles.sing}>
-      <Top title="Create Your Account" text="Already have an account?" link="Login" />
+      <Top title="Create Your Account" link="Login">Already have an account?</Top>
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
         <Input label='First Name' register={register} watch={watch} errors={errors} />
         <Input label='Last Name' register={register} watch={watch} errors={errors} />
