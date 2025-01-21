@@ -26,6 +26,10 @@ html {
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px 82px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ul {
@@ -42,6 +46,41 @@ button {
   cursor: pointer;
   border: none;
   background: transparent;
+  color: inherit;
+  font-family: inherit;
+  border-radius: 0.875rem;
+}
+
+input {
+  height: 3rem;
+  width: 35rem;
+  padding: 1.125rem 1.5rem;
+  border: solid 0.14875rem #207198;
+  border-radius: 0.875rem;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #37677e;
+  background-color: #fff;
+  // &:valid {
+  //   border: solid 0.125rem #6fcf97;
+  // }
+  // &:invalid {
+  //   border: solid 0.125rem #ee5757;
+  // }
+  @media (max-width: 37.5rem) {
+    & {
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      height: 3.75rem;
+      width: 21.4375rem;
+      padding: 0.9375rem 0.75rem;
+    }
+  }
+}
+
+h1 {
+  font-family: "Source Code Pro", monospace;
 }
 
 body {
@@ -49,11 +88,22 @@ body {
   font-family: "Source Code Pro", monospace;
   color: var(--dark);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 148%;
   background-color: var(--white);
 }
 
 main {
   flex-grow: 1;
+}
+@media (max-width: 45.3125rem) {
+  .container {
+    padding: 1.25rem;
+  }
+}
+@media (max-width: 23.4375rem) {
+  .container {
+    max-width: 23.4375rem;
+    padding: 1.25rem 1rem;
+  }
 }
