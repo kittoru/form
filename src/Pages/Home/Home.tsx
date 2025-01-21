@@ -1,3 +1,5 @@
+import { LogIn, SignUp } from '../../Widgets';
+
 import styles from './Home.module.scss';
 
 type Props = {
@@ -5,8 +7,9 @@ type Props = {
 }
 export const Home = ({}: Props) => {
   return ( 
-    <div>
-      home
+    <div className='container'>
+      {/* <LogIn/> */}
+      <SignUp/>
     </div>
   );
 }
