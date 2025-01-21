@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import styles from './Top.module.scss';
+import { PageContext } from '../../../app/context/Context';
 
 type Props = {
   title: string;
@@ -6,11 +8,13 @@ type Props = {
   children: React.ReactNode;
 }
 export const Top = ({title, link, children}: Props) => {
+  const page = useContext(PageContext);
+  console.log(page)
   return ( 
     <div className={styles.top}>  
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.text}>
-        {children} <a className={styles.link}>{link}</a>
+        {children} <a className={styles.link} onClick={() => page.changePages(page.page)}>{link}</a>
       </div>
     </div>
   );
