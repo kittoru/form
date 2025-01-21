@@ -9,7 +9,6 @@ type Props = {
 }
 export const Top = ({title, link, children}: Props) => {
   const page = useContext(PageContext);
-  console.log(page)
   return ( 
     <div className={styles.top}>  
       <h1 className={styles.title}>{title}</h1>
