@@ -2,15 +2,15 @@ import styles from './Top.module.scss';
 
 type Props = {
   title: string;
-  text: string;
   link: string;
+  children: React.ReactNode;
 }
-export const Top = ({title, text, link}: Props) => {
+export const Top = ({title, link, children}: Props) => {
   return ( 
     <div className={styles.top}>  
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.text}>
-        {text} <a className={styles.link}>{link}</a>
+        {children} <a className={styles.link}>{link}</a>
       </div>
     </div>
   );
