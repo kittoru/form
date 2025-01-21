@@ -1,0 +1,12 @@
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 35rem;
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
