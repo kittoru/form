@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 
 
-export const PageContext = createContext({ page: 'login', changePages: (page: string) => {} });
+export const PageContext = createContext({ page: 'login', changePages: (page: string) => {console.log(page)} });
 
 type Props = {
   children: React.ReactNode;
